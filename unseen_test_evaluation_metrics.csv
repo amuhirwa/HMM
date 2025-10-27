@@ -1,0 +1,3 @@
+State (Activity),Number of Samples,Sensitivity,Specificity,Precision,F1-Score,Overall Accuracy
+Standing,34,1.0000,1.0000,1.0000,1.0000,1.0000
+Still,36,1.0000,1.0000,1.0000,1.0000,1.0000
