@@ -8,35 +8,6 @@ This project implements a complete Hidden Markov Model (HMM) system for recogniz
 
 ```
 HMM/
-├── notebook.ipynb          # Main implementation notebook
-├── data/                   # Sensor data directory
-│   ├── Michael/            # Person 1 data
-│   │   ├── Standing/
-│   │   │   ├── Accelerometer_1.csv
-│   │   │   ├── Accelerometer_2.csv
-│   │   │   ├── Gyroscope_1.csv
-│   │   │   └── Gyroscope_2.csv
-│   │   ├── Still/
-│   │   │   ├── Accelerometer_1.csv
-│   │   │   ├── Accelerometer_2.csv
-│   │   │   ├── Gyroscope_1.csv
-│   │   │   └── Gyroscope_2.csv
-│   │   └── Walking/
-│   │       ├── Accelerometer_1.csv
-│   │       ├── Accelerometer_2.csv
-│   │       ├── Gyroscope_1.csv
-│   │       └── Gyroscope_2.csv
-│   ├── Joan/            # Person 2 data (optional)
-│   │   └── [same structure]
-│   └── combined_data/      # Auto-generated combined CSVs
-│       ├── Michael_Standing_Accelerometer_Combined.csv
-│       ├── Michael_Standing_Gyroscope_Combined.csv
-│       └── [etc.]
-└── README.md              # This file
-```
-
-```
-HMM/
 ├── notebook.ipynb                      # Main implementation notebook (data processing, HMM training, evaluation)
 ├── README.md                           # Project description, setup instructions, and overview
 ├── data/                               # Sensor data directory
@@ -81,7 +52,7 @@ HMM/
 │       ├── Michael_Test_Gyroscope.csv
 │       ├── Joan_Test_Accelerometer.csv
 │       └── Joan_Test_Gyroscope.csv
-└── requirements.txt                     # Python dependencies (numpy, pandas, hmmlearn, matplotlib)
+
 ```
 
 ## What's Implemented
