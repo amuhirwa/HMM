@@ -231,6 +231,10 @@ Learns HMM parameters using Expectation-Maximization:
 - **Meaning**: Harmonic mean balancing precision and recall
 - **Important for**: Overall model quality assessment
 
+## 📈 Output Visualizations
+
+All generated plots (e.g., `unseen_test_comparison.png`, `unseen_test_evaluation.png`, `confusion_matrix.png`) are automatically saved to the **project root** for reporting and grading purposes.
+
 ## Tips for Your Report
 
 ### Background Section
