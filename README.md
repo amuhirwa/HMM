@@ -32,7 +32,7 @@ HMM/
 │   │       ├── Accelerometer_2.csv
 │   │       ├── Gyroscope_1.csv
 │   │       └── Gyroscope_2.csv
-│   ├── Joan/                            # Person 2 raw data (optional)
+│   ├── Joan/                            # Person 2 raw data 
 │   │   └── [same structure as Michael]
 │   ├── combined_data/                   # Auto-generated combined CSVs for each person & activity
 │   │   ├── Michael_Standing_Accelerometer_Combined.csv
@@ -57,7 +57,7 @@ HMM/
 
 ## What's Implemented
 
-### 1. Data Loading and Visualization ✅
+### 1. Data Loading and Visualization 
 
 - **Flexible data loading:** Automatically detects and loads all sensor files
   - Supports multiple files per activity (Accelerometer_1.csv, Accelerometer_2.csv, etc.)
@@ -67,7 +67,7 @@ HMM/
 - Visualizes raw accelerometer and gyroscope signals
 - Displays data distributions and file information
 
-### 2. Feature Extraction ✅
+### 2. Feature Extraction 
 
 **Time-Domain Features:**
 
@@ -88,7 +88,7 @@ HMM/
 - Overlapping windows (default: 50% overlap)
 - Z-score normalization
 
-### 3. HMM Implementation ✅
+### 3. HMM Implementation 
 
 **Complete from-scratch implementation including:**
 
@@ -98,7 +98,7 @@ HMM/
 - Convergence checking with tolerance threshold
 - Numerical stability features
 
-### 4. Model Evaluation ✅
+### 4. Model Evaluation 
 
 - Temporal train/test split (80/20)
 - Confusion matrix visualization
@@ -110,7 +110,7 @@ HMM/
 - Overall accuracy
 - State sequence visualization
 
-### 5. Analysis ✅
+### 5. Analysis 
 
 - Activity distinguishability analysis
 - Transition probability interpretation
@@ -151,12 +151,12 @@ pip install numpy pandas matplotlib seaborn scipy scikit-learn
 
 The notebook generates all required components:
 
-- ✅ Data visualizations
-- ✅ Transition probability heatmaps
-- ✅ Confusion matrices
-- ✅ Evaluation metrics tables
-- ✅ State sequence plots
-- ✅ Training convergence plots
+-  Data visualizations
+-  Transition probability heatmaps
+-  Confusion matrices
+-  Evaluation metrics tables
+-  State sequence plots
+-  Training convergence plots
 
 ## Key Features
 
@@ -182,15 +182,15 @@ Learns HMM parameters using Expectation-Maximization:
 **Why These Features?**
 
 1. **Mean (time-domain)**: Captures average position/orientation
-   - Standing vs. Walking show different mean values
+   - Standing vs. Walking shows different mean values
 2. **RMS (time-domain)**: Measures signal energy
-   - Walking has higher energy than Still
+   - Walking has higher energy than being still
 3. **SMA (time-domain)**: Captures overall movement intensity
    - Discriminates active vs. inactive states
 4. **Correlation (time-domain)**: Shows axis coordination
    - Walking shows coordinated x-y-z patterns
 5. **Dominant Frequency (frequency-domain)**: Main motion frequency
-   - Walking has periodic patterns at step frequency
+   - Walking has periodic patterns at the step frequency
 6. **Spectral Energy (frequency-domain)**: Total energy in frequency domain
    - Complements time-domain energy features
 7. **Spectral Entropy (frequency-domain)**: Signal complexity
@@ -309,7 +309,7 @@ sensor_data = load_multi_person_data(
 ### Issue: "File not found"
 
 - Check file paths in the notebook
-- Ensure CSV files are in correct directories
+- Ensure CSV files are in the correct directories
 - Use absolute paths if relative paths fail
 
 ### Issue: "Too few samples for training"
@@ -338,7 +338,7 @@ sensor_data = load_multi_person_data(
 
 ## Rubric Compliance Checklist
 
-### Data Collection (10 pts) ✅
+### Data Collection  ✅
 
 - [x] 50 well-labeled files across activities
 - [x] Minimum 1:30 per activity
@@ -346,7 +346,7 @@ sensor_data = load_multi_person_data(
 - [x] Different sampling rates handled
 - [x] Visualization plots included
 
-### Feature Extraction (10 pts) ✅
+### Feature Extraction  ✅
 
 - [x] > 3 features total
 - [x] > 2 time-domain features
@@ -354,14 +354,14 @@ sensor_data = load_multi_person_data(
 - [x] Features justified
 - [x] Z-score normalization applied and explained
 
-### Implementation (15 pts) ✅
+### Implementation  ✅
 
 - [x] Functional Viterbi algorithm
 - [x] Baum-Welch with convergence check
 - [x] Robust implementation
 - [x] Well-documented code
 
-### Evaluation (10 pts) ✅
+### Evaluation  ✅
 
 - [x] Tested on unseen data (2+ test files)
 - [x] Sensitivity, specificity, accuracy reported
@@ -398,4 +398,4 @@ Educational project for academic purposes.
 
 ---
 
-**Good luck with your project! 🎯**
+**Good luck with your project!**
