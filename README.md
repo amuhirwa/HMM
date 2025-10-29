@@ -26,7 +26,7 @@ HMM/
 │   │       ├── Accelerometer_2.csv
 │   │       ├── Gyroscope_1.csv
 │   │       └── Gyroscope_2.csv
-│   ├── Person2/            # Person 2 data (optional)
+│   ├── Joan/            # Person 2 data (optional)
 │   │   └── [same structure]
 │   └── combined_data/      # Auto-generated combined CSVs
 │       ├── Michael_Standing_Accelerometer_Combined.csv
