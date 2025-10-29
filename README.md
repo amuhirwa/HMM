@@ -35,6 +35,55 @@ HMM/
 └── README.md              # This file
 ```
 
+```
+HMM/
+├── notebook.ipynb                      # Main implementation notebook (data processing, HMM training, evaluation)
+├── README.md                           # Project description, setup instructions, and overview
+├── data/                               # Sensor data directory
+│   ├── Michael/                         # Person 1 raw data
+│   │   ├── Standing/
+│   │   │   ├── Accelerometer_1.csv
+│   │   │   ├── Accelerometer_2.csv
+│   │   │   ├── Gyroscope_1.csv
+│   │   │   └── Gyroscope_2.csv
+│   │   ├── Still/
+│   │   │   ├── Accelerometer_1.csv
+│   │   │   ├── Accelerometer_2.csv
+│   │   │   ├── Gyroscope_1.csv
+│   │   │   └── Gyroscope_2.csv
+│   │   ├── Walking/
+│   │   │   ├── Accelerometer_1.csv
+│   │   │   ├── Accelerometer_2.csv
+│   │   │   ├── Gyroscope_1.csv
+│   │   │   └── Gyroscope_2.csv
+│   │   └── Jumping/
+│   │       ├── Accelerometer_1.csv
+│   │       ├── Accelerometer_2.csv
+│   │       ├── Gyroscope_1.csv
+│   │       └── Gyroscope_2.csv
+│   ├── Joan/                            # Person 2 raw data (optional)
+│   │   └── [same structure as Michael]
+│   ├── combined_data/                   # Auto-generated combined CSVs for each person & activity
+│   │   ├── Michael_Standing_Accelerometer_Combined.csv
+│   │   ├── Michael_Standing_Gyroscope_Combined.csv
+│   │   └── [etc. for all activities and sensors]
+│   │   └── multi_person/               # Combined data across multiple participants
+│   │       ├── all_people_Standing_Accelerometer.csv
+│   │       ├── all_people_Standing_Gyroscope.csv
+│   │       ├── all_people_Still_Accelerometer.csv
+│   │       ├── all_people_Still_Gyroscope.csv
+│   │       ├── all_people_Walking_Accelerometer.csv
+│   │       ├── all_people_Walking_Gyroscope.csv
+│   │       ├── all_people_Jumping_Accelerometer.csv
+│   │       └── all_people_Jumping_Gyroscope.csv
+│   └── test/                            # Unseen data for evaluation
+│       ├── Michael_Test_Accelerometer.csv
+│       ├── Michael_Test_Gyroscope.csv
+│       ├── Joan_Test_Accelerometer.csv
+│       └── Joan_Test_Gyroscope.csv
+└── requirements.txt                     # Python dependencies (numpy, pandas, hmmlearn, matplotlib)
+```
+
 ## What's Implemented
 
 ### 1. Data Loading and Visualization ✅
