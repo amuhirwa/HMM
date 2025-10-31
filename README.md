@@ -109,6 +109,7 @@ HMM/
   - F1-Score
 - Overall accuracy
 - State sequence visualization
+- Test on 2 completely unseen test files
 
 ### 5. Analysis 
 
