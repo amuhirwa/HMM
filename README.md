@@ -302,7 +302,7 @@ Use the `load_multi_person_data()` function (see cell 5 in notebook):
 ```python
 sensor_data = load_multi_person_data(
     data_path,
-    people=['Michael', 'Person2', 'Person3'],
+    people=['Michael', 'Joan'],
     activities=['Standing', 'Still', 'Walking'],
     save_combined=True
 )
